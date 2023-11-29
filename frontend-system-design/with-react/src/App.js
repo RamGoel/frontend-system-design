@@ -1,21 +1,16 @@
+import { data } from "./components/explorer/explorer.data";
+import { Explorer } from "./components/explorer/explorer.screen";
+import { HolyGrail } from "./components/holy-grail/holy-grail.screen";
+import { ProgressBar } from "./components/progress-bar/progress-bar.screen";
+import { Suggestions } from "./components/typeahead-input/typeahead-input.component";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={{}} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Explorer explorer={data} /> */}
+      {/* <HolyGrail /> */}
+      {/* <ProgressBar cycle={10} timeout={10000} /> */}
+      <Suggestions />
     </div>
   );
 }
